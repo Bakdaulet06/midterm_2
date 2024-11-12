@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="weatherApp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=water_drop" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=air" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-content">
+        <div class="search-bar">
+            <div class="search">
+                <input type="text" placeholder="Search city">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="weather hidden">
+
+            <div class="location-and-date">
+                <div class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                    <p class="city-name">Jakarta</p>
+                </div>
+                <div class="date">
+                    <span class="week-day">Monday, </span>
+                    <span class="day">4 </span>
+                    <span class="month">Aug</span>
+                </div>
+            </div>
+
+            <div class="weather-info">
+                <div class="weather-icon"></div>
+                <div class="weather-condition">
+                    <span class="celcius">29 C</span>
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+
+            <div class="humidity-and-wind-speed">
+                <div class="humidity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                        <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
+                      </svg>
+                    <div class="humidity-text">
+                        <p class="text">Humidity</p>
+                        <span class="humidity-value">55%</span>
+                    </div>
+                </div>
+                <div class="wind-speed">
+                    <span class="material-symbols-outlined">
+                        air
+                        </span>
+                    <div class="wind-speed-text">
+                        <p class="text">Wind Speed</p>
+                        <span class="wind-speed-value">11M/s</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <div class="forecast-day">
+                    <p class="date">
+                        akld
+                    </p>
+                    <div class="weather-icon"></div>
+                    <div class="celcius">17xo</div>
+                </div>
+                <div class="forecast-day">
+                    <p class="date">
+                        akld
+                    </p>
+                    <div class="weather-icon"></div>
+                    <div class="celcius">17xo</div>
+                </div>
+                <div class="forecast-day">
+                    <p class="date">
+                        akld
+                    </p>
+                    <div class="weather-icon"></div>
+                    <div class="celcius">17xo</div>
+                </div>
+                <div class="forecast-day">
+                    <p class="date">
+                        akld
+                    </p>
+                    <div class="weather-icon"></div>
+                    <div class="celcius">17xo</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="before-search">
+            <h2>Search city</h2>
+            <p>Find out the weather conditions of the city</p>
+        </div>
+
+        <div class="not-found hidden">
+            <h2>There is no data according to your search</h2>
+        </div>
+    </main>
+
+    <script src="weatherApp.js">
+    </script>
+</body>
+</html>

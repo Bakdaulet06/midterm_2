@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+  font-family: "Poppins";
+  color: #dad7cd;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #344e41;
+}
+.main-content{
+  background-color: #3a5a40;
+  max-width: 500px;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+}
+.weather{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.search-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.search{
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  margin: 20px 0px;
+  background-color: #a3b18a;
+  padding: 10px;
+}
+.search input{
+  width: 100%;
+  margin: 0px 20px;
+  outline: none;
+  border: none;
+  background-color: #a3b18a;
+}
+svg{
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.weather-icon-img{
+  width: 150px;
+  height: 150px;
+}
+.weather-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather-condition{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.humidity-and-wind-speed, .location-and-date{
+  display: flex;
+  justify-content: space-between;
+}
+.humidity, .wind-speed, .location{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.forecast{
+  overflow-x: scroll;
+  display: flex;
+  gap: 20px;
+}
+.forecast-day{
+  background-color: #a3b18a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.before-search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+
+@media screen and (max-width:428px){
+  .location-and-date, .humidity-and-wind-speed{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main-content{
+    height: fit-content;
+  }
+}
